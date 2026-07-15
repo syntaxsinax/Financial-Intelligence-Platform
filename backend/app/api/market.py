@@ -1,12 +1,12 @@
 from fastapi import APIRouter
-from app.services.marketData import MarketDataService
+from app.services.marketData import marketDataService
 
 router = APIRouter(prefix = "/market", tags=["market"])
-market_service = MarketDataService()
+market_service = marketDataService()
 
 
 @router.get("/test")
-def market_test:
+def market_test():
     return market_service.get_status()
 
 
