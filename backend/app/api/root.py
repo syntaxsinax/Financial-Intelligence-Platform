@@ -7,5 +7,5 @@ router = APIRouter()
 def root():
     return {
         "project": "Financial Intelligence Platform",
-        "status": "running"
+        "status": "en linea"
     }
