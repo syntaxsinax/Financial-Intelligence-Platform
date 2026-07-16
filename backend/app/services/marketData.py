@@ -13,7 +13,7 @@ class marketDataService:
         info = stock.info
 
         return {
-            "ticker": ticker.uppeer(),
+            "ticker": ticker.upper(),
             "company_name": info.get("longName"),
             "current_price": info.get("currentPrice"),
             "currency": info.get("currency"),
