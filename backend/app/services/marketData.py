@@ -14,8 +14,8 @@ class marketDataService:
 
         return {
             "ticker": ticker.uppeer(),
-            "company_name": info.get(longName),
-            "current_price": info.get(currentPrice),
+            "company_name": info.get("longName"),
+            "current_price": info.get("currentPrice"),
             "currency": info.get("currency"),
             "exchange": info.get("exchange")
         }
