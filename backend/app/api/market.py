@@ -15,3 +15,8 @@ def market_test():
 def get_marketData(ticker: str):
     return market_service.get_stockinfo(ticker)
 
+
+@router.get("/{ticker}/history")
+def get_marketHistory(ticker: str):
+    return market_service.get_stockhistory(ticker)
+
