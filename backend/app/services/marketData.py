@@ -35,5 +35,6 @@ class marketDataService:
                 "volume": int(row["Volume"])
 
             })
+        return record
 
 
