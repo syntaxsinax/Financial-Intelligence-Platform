@@ -9,4 +9,8 @@ market_service = marketDataService()
 def market_test():
     return market_service.get_status()
 
+@router.get("/{ticker}")
+def get_marketData(ticker: str):
+    return market_service.get_stockinfo(ticker)
+
 
