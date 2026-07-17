@@ -38,3 +38,8 @@ class marketDataService:
         return record
 
 
+    def get_historyDataframe(self, ticker: str, period: str = "6mo"):
+        stock = yf.Ticker(ticker)
+        return stock.history(period=period)
+
+
