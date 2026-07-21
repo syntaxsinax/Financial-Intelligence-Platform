@@ -5,7 +5,7 @@ router = APIRouter(prefix = "/analytics", tags = ["Analytics"])
 
 featureService = featureEngineeringService()
 
-@router.get("{ticker}/features")
+@router.get("/{ticker}/features")
 
-def get_Features(ticker: str):
+def get_some(ticker: str):
     return featureService.get_Features(ticker)
