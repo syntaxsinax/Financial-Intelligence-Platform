@@ -7,5 +7,5 @@ featureService = featureEngineeringService()
 
 @router.get("/{ticker}/features")
 
-def get_some(ticker: str):
+def get_Features(ticker: str):
     return featureService.get_Features(ticker)
